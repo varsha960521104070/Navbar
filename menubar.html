@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        body{
+            background-color: rgb(206, 191, 162);
+        }
+        a{
+            list-style-type: none;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+        }
+        nav{
+            display: flex;
+            background-color: rgb(6, 6, 89);
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+        }
+        nav ul li{
+            margin: 0 10px;
+            padding: 10px 20px;
+        }
+        button{
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+        .signin{
+            background-color: green;
+            border: none;
+            border-radius: 5px;
+        }
+        .signup{
+            background-color: pink;
+            border: none;
+            border-radius: 5px;
+        }
+        .signup:hover{
+            background-color: #a7a7a7;
+        }
+        .signin:hover{
+            background-color: #a7a7a7;
+        }
+        .signin:focus{
+            background-color: red;
+        }
+        .signup:focus{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>Portfolio</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+        <form>
+            <button class="signin">Sign In</button>
+            <button class="signup">Sign Up</button>
+        </form>
+        
+    </nav>
+</body>
+</html>
